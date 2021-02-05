@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="110dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_movie_name_year"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.3"
+        android:background="#000000"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        tools:text="Movie name and year" />
+
+    <TextView
+        android:id="@+id/tv_describe_movie"
+        android:layout_width="220dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.3"
+        android:background="#000000"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        tools:text="Describe movies" />
+
+    <Button
+        android:id="@+id/button_add_watched"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add watched"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintLeft_toLeftOf="@id/button_add_favorite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_describe_movie"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_add_favorite"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add favorite"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_add_watched"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
